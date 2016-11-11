@@ -1,16 +1,18 @@
-Training vs. hiring to meet the IT needs of today and tomorrow
-培训还是雇人，来满足当今和未来的 IT 需求
+Training vs. hiring to meet the IT needs of today and tomorrow 校对中
+为满足当今和未来 IT 需求，培训员工还是雇用新人？
 ================================================================
 
 ![](https://enterprisersproject.com/sites/default/files/styles/620x350/public/images/cio_talent_4.png?itok=QLhyS_Xf)
 
-在数字化时代，由于企业需要不断跟上工具和技术更新换代的步伐，对 IT 技能的需求也稳定增长。对于企业来说，寻找和雇佣那些拥有令人垂涎能力的创新人才，是非常不容易的。同时，培训内部员工来使他们接受新的技能和挑战，需要一定的时间。而且，这也往往满足不了需求。
+在数字化时代，由于IT工具不断更新，技术公司紧随其后，对 IT 技能的需求也不断变化。对于企业来说，寻找和雇佣那些拥有令人垂涎能力的创新人才，是非常不容易的。同时，培训内部员工来使他们接受新的技能和挑战，需要一定的时间，而时间要求常常是紧迫的。
 
-[Sandy Hill][1] 对多种 IT 学科涉及到的多项技术都很熟悉。她作为 [Pegasystems][2] 项目的 IT 主管，负责的 IT 团队涉及的领域从应用的部署到数据中心的运营。更重要的是，Pegasystems 开发应用来帮助销售，市场，服务以及运行团队简化操作，联系客户。这意味着她需要掌握和利用 IT 内部资源的最佳方法，面对公司客户遇到的 IT 挑战。
+
+[Sandy Hill][1] 对 IT 涉及到的多项技术都很熟悉。她作为 [Pegasystems][2] 项目的 IT 总监，负责多个 IT 团队，从应用的部署到数据中心的运营都要涉及。更重要的是，Pegasystems 开发帮助销售、市场、服务以及运营团队流水化操作，以及客户联络的应用。这意味着她需要掌握使用 IT 内部资源的最佳方法，面对公司客户遇到的 IT 挑战。
+
 
 ![](https://enterprisersproject.com/sites/default/files/CIO_Q%20and%20A_0.png)
 
-**企业家项目（TEP）：这些年你是如何调整培训重心的？**
+**TEP（企业家项目）：这些年你是如何调整培训重心的？**
 
 **Hill**：在过去的几十年中，我们经历了爆炸式的发展，所以现在我们要实现更多的全球化进程。随之而来的培训方面，将确保每个人都在同一起跑线上。
 
@@ -46,7 +48,7 @@ via: https://enterprisersproject.com/article/2016/6/training-vs-hiring-meet-it-n
 
 作者：[Paul Desmond][a]
 译者：[Cathon](https://github.com/Cathon)
-校对：[校对者ID](https://github.com/校对者ID)
+校对：[jasminepeng](https://github.com/jasminepeng)
 
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
 
