@@ -32,48 +32,48 @@
 
 ```
 
-#### 1. 输入以下命令，删除一个目录下除了特定文件名之外的所有文件
+#### 1. 输入以下命令，删除一个目录下特定文件名之外的所有文件。
 
   ```
 $ rm -v !("filename")
 
   ```
-  [!(http://www.tecmint.com/wp-content/uploads/2016/10/DeleteAll-Files-Except-One-File-in-Linux.png)][9]
+  [![Linux 下删除特定文件之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/DeleteAll-Files-Except-One-File-in-Linux.png)][9]
 
-   Linux 下删除特定文件之外的所有文件
+                            Linux 下删除特定文件之外的所有文件
 
 
-#### 2. 删除除了 filename1 和 filename2 之外的所有文件
+#### 2. 删除 filename1 和 filename2 之外的所有文件：
 
   ```
 $ rm -v !("filename1"|"filename2") 
 
   ```
-  [![在 Linux 下删除除了一些文件之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Few-Files-in-Linux.png)][8]
+  [![ Linux 下删除一些文件之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Few-Files-in-Linux.png)][8]
 
-  在 Linux 下删除除了一些文件之外的所有文件
+                        Linux 下删除一些文件之外的所有文件 
 
-#### 3. 下面的例子显示如何通过交互模式删除除了 `.zip` 之外的所有文件
+#### 3. 下面的例子显示如何通过交互模式删除 `.zip` 之外的所有文件：
 
   ```
 $ rm -i !(*.zip)
 
   ```
-  [![在 Linux 下删除除了 Zip 文件之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Zip-Files-in-Linux.png)][7]
+  [![ Linux 下删除 Zip 文件之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Zip-Files-in-Linux.png)][7]
 
-  在 Linux 下删除除了 Zip 文件之外的所有文件
+                     Linux 下删除 Zip 文件之外的所有文件
 
-#### 4. 接下来，通过如下的方式你可以删除一个目录下除了所有的`.zip` 和 `.odt` 文件的所有文件，并且在删除的时候，显示正在删除的文件：
+#### 4. 接下来，通过如下方式，可以删除一个目录下除了所有的`.zip` 和 `.odt` 文件外的所有文件，并且在删除的时候，显示正在进行的操作：
 
   ```
 $ rm -v !(*.zip|*.odt)
 
   ```
-  [![删除除了指定文件扩展的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Certain-File-Extensions.png)][6]
+  [![删除指定文件扩展名外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-All-Files-Except-Certain-File-Extensions.png)][6]
 
-  删除除了指定文件扩展的所有文件
+                                        删除指定文件扩展名外的所有文件
 
-一旦你已经执行了所有需要的命令，使用如下的方式关闭 extglob shell 选项。
+执行完所有需要的命令后，使用如下方式关闭 extglob shell 。
 
   ```
 $ shopt -u extglob
@@ -82,7 +82,7 @@ $ shopt -u extglob
 
 ### 使用 Linux 下的 find 命令删除文件
 
-在这种方法下，我们可以[只使用 find 命令][5]的适当的选项或者采用管道配合 xargs 命令，如下所示：
+在这种方法下，我们可以只[使用 find 命令][5]的适当的选项或者采用管道配合 xargs 命令，如下所示：
 
   ```
 $ find /directory/ -type f -not -name 'PATTERN' -delete
@@ -91,7 +91,7 @@ $ find /directory/ -type f -not -name 'PATTERN' -print0 | xargs -0 -I {} rm [opt
 
   ```
 
-#### 5. 下面的命令将会删除当前目录下除了 `.gz` 之外的所有文件
+#### 5. 下面的命令将会删除当前目录下除了 `.gz` 之外的所有文件：
 
   ```
 $ find . -type f -not -name '*.gz' -delete
@@ -99,7 +99,7 @@ $ find . -type f -not -name '*.gz' -delete
   ```
   [![find 命令 —— 删除 .gz 之外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Remove-All-Files-Except-gz-Files.png)][4]
 
-  find 命令 —— 删除 .gz 之外的所有文件
+                      find 命令 —— 删除 .gz 之外的所有文件
 
 #### 6. 使用管道和 xargs，你可以通过如下的方式修改上面的例子：
 
@@ -109,23 +109,23 @@ $ find . -type f -not -name '*gz' -print0 | xargs -0  -I {} rm -v {}
   ```
   [![使用 find 和 xargs 命令删除文件](http://www.tecmint.com/wp-content/uploads/2016/10/Remove-Files-Using-Find-and-Xargs-Command.png)][3]
 
-  使用 find 和 xargs 命令删除文件
+                            使用 find 和 xargs 命令删除文件
 
-#### 7. 让我们看一个额外的例子，下面的命令行将会抹除掉当前目录下除了 `.gz`、 `.odt` 和 `.jpg` 之外的所有文件：
+#### 7. 再看一个例子，删除当前目录下除了 `.gz`、 `.odt` 和 `.jpg` 之外的所有文件：
 
   ```
 $ find . -type f -not \(-name '*gz' -or -name '*odt' -or -name '*.jpg' \) -delete
 
   ```
-  [![删除除了指定扩展文件的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Remove-All-Files-Except-File-Extensions.png)][2]
+  [![删除指定扩展名外的所有文件](http://www.tecmint.com/wp-content/uploads/2016/10/Remove-All-Files-Except-File-Extensions.png)][2]
 
-  删除除了指定扩展文件的所有文件
+                            删除指定扩展名外的所有文件
 
 ### 通过 bash 中的 GLOBIGNORE 变量删除文件
 
-然而，最后的方法，只适用于 bash。 GLOBIGNORE 变量存储了一个通过路径名扩展忽略的分离的模式（或者文件名）列表。
-
-为了使用这种方法，移动到要删除文件的目录，像下面这样设置 GLOBIGNORE 变量：
+下面这最后的方法，只适用于 bash。 GLOBIGNORE 变量存储了一个模式列表（或文件名），该列表由冒号分隔，列表中的文件将被忽略。
+ 
+使用此方法时，在要删除文件的目录下，像下面这样设置 GLOBIGNORE 变量：
 
 ```
 $ cd test
@@ -150,11 +150,9 @@ $ unset GLOBIGNORE
 ```
 [![使用 bash 变量 GLOBIGNORE 删除文件](http://www.tecmint.com/wp-content/uploads/2016/10/Delete-Files-Using-Bash-GlobIgnore.png)][1]
 
-使用 bash 变量 GLOBIGNORE 删除文件
+                                  使用 bash 变量 GLOBIGNORE 删除文件
 
-注：为了理解上面的命令行采用的标识的意思，请参考我们在每一个插图中使用的命令对应的 man 手册。
-
-就这些了！如果你心里有实现相同目录的其他命令行技术，不要忘了通过下面的反馈部分分享给我们。
+就这些了！如果你可实现用其他命令行实现同样的效果，请分享给我们。
 
 --------------------------------------------------------------------------------
 
